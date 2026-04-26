@@ -1,0 +1,144 @@
+{
+  "type": "object",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://marinalinde.github.io/json-schema-kt/hackathon_kt.json",
+  "title": "Test - Amtsärztliche Untersuchung Durchführung Dienstfähigkeit, Dienstunfallfolgen bei Beamtinnen und Beamten ",
+  "properties": {
+    "G05005693V1.0": {
+      "$ref": "#/$defs/G05005693V1.0"
+    }
+  },
+  "$defs": {
+    "G05005693V1.0": {
+      "title": "Persönliche Angaben",
+      "type": "object",
+      "properties": {
+        "F60000227V1.1": {
+          "$ref": "#/$defs/F60000227V1.1"
+        },
+        "F60000230V1.1": {
+          "$ref": "#/$defs/F60000230V1.1"
+        },
+        "F60000228V1.2": {
+          "$ref": "#/$defs/F60000228V1.2"
+        },
+        "F05001081V2.0": {
+          "$ref": "#/$defs/F05001081V2.0"
+        },
+        "F60000234V1.1": {
+          "$ref": "#/$defs/F60000234V1.1"
+        },
+        "F05002483": {
+          "$ref": "#/$defs/F05002483"
+        },
+        "F60000243V1.1": {
+          "$ref": "#/$defs/F60000243V1.1"
+        },
+        "F60000244V1.2": {
+          "$ref": "#/$defs/F60000244V1.2"
+        },
+        "F60000246V1.1": {
+          "$ref": "#/$defs/F60000246V1.1"
+        },
+        "F60000247V1.1": {
+          "$ref": "#/$defs/F60000247V1.1"
+        },
+        "F60000240V1.1": {
+          "$ref": "#/$defs/F60000240V1.1"
+        },
+        "F05001701V2.0": {
+          "$ref": "#/$defs/F05001701V2.0"
+        },
+        "F60000242V1.1": {
+          "$ref": "#/$defs/F60000242V1.1"
+        }
+      },
+      "required": [
+        "F60000227V1.1",
+        "F60000228V1.2",
+        "F05001081V2.0",
+        "F60000234V1.1",
+        "F05002483",
+        "F60000243V1.1",
+        "F60000244V1.2",
+        "F60000246V1.1",
+        "F60000247V1.1"
+      ]
+    },
+    "F60000227V1.1": {
+      "maxLength": 120,
+      "minLength": 1,
+      "title": "Nachname",
+      "type": "string"
+    },
+    "F60000230V1.1": {
+      "maxLength": 75,
+      "minLength": 1,
+      "title": "Geburtsname",
+      "type": "string"
+    },
+    "F60000228V1.2": {
+      "maxLength": 80,
+      "minLength": 1,
+      "title": "Vornamen",
+      "type": "string"
+    },
+    "F05001081V2.0": {
+      "format": "date",
+      "title": "Geburtsdatum",
+      "type": "string"
+    },
+    "F60000234V1.1": {
+      "maxLength": 80,
+      "minLength": 1,
+      "title": "Geburtsort",
+      "type": "string"
+    },
+    "F05002483": {
+      "title": "Beruf",
+      "type": "string"
+    },
+    "F60000243V1.1": {
+      "maxLength": 55,
+      "minLength": 1,
+      "title": "Straße",
+      "type": "string"
+    },
+    "F60000244V1.2": {
+      "maxLength": 11,
+      "minLength": 1,
+      "title": "Hausnummer",
+      "type": "string"
+    },
+    "F60000246V1.1": {
+      "maxLength": 5,
+      "minLength": 5,
+      "pattern": "([0]{1}[1-9]{1}|[1-9]{1}[0-9]{1})[0-9]{3}",
+      "title": "Postleitzahl",
+      "type": "string"
+    },
+    "F60000247V1.1": {
+      "maxLength": 50,
+      "minLength": 1,
+      "title": "Ort",
+      "type": "string"
+    },
+    "F60000240V1.1": {
+      "maxLength": 23,
+      "minLength": 1,
+      "title": "Telefon",
+      "type": "string"
+    },
+    "F05001701V2.0": {
+      "title": "Mobilfunknummer",
+      "type": "string"
+    },
+    "F60000242V1.1": {
+      "maxLength": 254,
+      "minLength": 6,
+      "pattern": "[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{1,63}$",
+      "title": "E-Mail",
+      "type": "string"
+    }
+  }
+}
