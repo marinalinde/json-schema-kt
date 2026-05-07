@@ -1,0 +1,666 @@
+{
+	"$defs": {
+		"F00003338V1.0": {
+			"enum": [
+				"001",
+				"002"
+			],
+			"title": "Auswahl der zu belehrenden Person",
+			"type": "string"
+		},
+		"F00003339V1.0": {
+			"enum": [
+				"01",
+				"02",
+				"03"
+			],
+			"title": "Auftraggebende Person",
+			"type": "string"
+		},
+		"F00003340V1.0": {
+			"title": "Nachweis der Berechtigung ",
+			"type": "string"
+		},
+		"F00003385V1.0": {
+			"title": "Erstmalige Ausübung der Tätigkeit ",
+			"type": "boolean"
+		},
+		"F00003386V1.0": {
+			"title": "Bestehende Bescheinigung über die Belehrung nach dem Infektionsschutzgesetz ",
+			"type": "boolean"
+		},
+		"F00003387V1.0": {
+			"title": "Tatsachen für ein Tätigkeitsverbot ",
+			"type": "boolean"
+		},
+		"F03011101V1.0": {
+			"title": "Ärztliches Zeugnis ",
+			"type": "boolean"
+		},
+		"F03011102V1.0": {
+			"title": "Nachweis eines ärztlichen Zeugnisses ",
+			"type": "string"
+		},
+		"F60000227V1.1": {
+			"maxLength": 120,
+			"minLength": 1,
+			"title": "Familienname",
+			"type": "string"
+		},
+		"F60000228V2.0": {
+			"maxLength": 80,
+			"minLength": 1,
+			"title": "Vornamen",
+			"type": "string"
+		},
+		"F60000229V2.0": {
+			"maxLength": 119,
+			"minLength": 3,
+			"title": "Doktorgrade",
+			"type": "string"
+		},
+		"F60000230V2.0": {
+			"maxLength": 75,
+			"minLength": 1,
+			"title": "Geburtsname",
+			"type": "string"
+		},
+		"F60000231V1.1": {
+			"maximum": 31.0,
+			"minimum": 1.0,
+			"title": "Tag (ohne Monat und Jahr)",
+			"type": "integer"
+		},
+		"F60000232V1.1": {
+			"maximum": 12.0,
+			"minimum": 1.0,
+			"title": "Monat",
+			"type": "integer"
+		},
+		"F60000233V1.1": {
+			"maximum": 2080.0,
+			"minimum": 1850.0,
+			"title": "Jahr",
+			"type": "integer"
+		},
+		"F60000240V1.1": {
+			"maxLength": 23,
+			"minLength": 1,
+			"title": "Telefon",
+			"type": "string"
+		},
+		"F60000241V1.1": {
+			"maxLength": 23,
+			"minLength": 1,
+			"title": "Telefax",
+			"type": "string"
+		},
+		"F60000242V1.1": {
+			"maxLength": 254,
+			"minLength": 6,
+			"pattern": "[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{1,63}$",
+			"title": "E-Mail",
+			"type": "string"
+		},
+		"F60000243V1.2": {
+			"maxLength": 55,
+			"minLength": 1,
+			"title": "Straße",
+			"type": "string"
+		},
+		"F60000244V1.2": {
+			"maxLength": 11,
+			"minLength": 1,
+			"title": "Hausnummer",
+			"type": "string"
+		},
+		"F60000246V1.1": {
+			"maxLength": 5,
+			"minLength": 5,
+			"pattern": "([0]{1}[1-9]{1}|[1-9]{1}[0-9]{1})[0-9]{3}",
+			"title": "Postleitzahl",
+			"type": "string"
+		},
+		"F60000247V2.2": {
+			"maxLength": 50,
+			"minLength": 1,
+			"title": "Ort",
+			"type": "string"
+		},
+		"F60000248V1.1": {
+			"maxLength": 21,
+			"minLength": 1,
+			"title": "Anschrift Zusatzangaben",
+			"type": "string"
+		},
+		"F60000249V1.1": {
+			"maxLength": 21,
+			"minLength": 1,
+			"title": "Postfach",
+			"type": "string"
+		},
+		"F60000261V2.1": {
+			"enum": [
+				"000",
+				"121",
+				"122",
+				"123",
+				"124",
+				"125",
+				"126",
+				"127",
+				"128",
+				"129",
+				"130",
+				"131",
+				"134",
+				"135",
+				"136",
+				"137",
+				"139",
+				"140",
+				"141",
+				"142",
+				"143",
+				"144",
+				"145",
+				"146",
+				"147",
+				"148",
+				"149",
+				"150",
+				"151",
+				"152",
+				"153",
+				"154",
+				"155",
+				"156",
+				"157",
+				"158",
+				"160",
+				"161",
+				"163",
+				"164",
+				"165",
+				"166",
+				"167",
+				"168",
+				"169",
+				"170",
+				"181",
+				"221",
+				"223",
+				"224",
+				"225",
+				"226",
+				"227",
+				"229",
+				"230",
+				"231",
+				"232",
+				"233",
+				"236",
+				"237",
+				"238",
+				"239",
+				"242",
+				"243",
+				"244",
+				"245",
+				"246",
+				"247",
+				"248",
+				"249",
+				"251",
+				"252",
+				"253",
+				"254",
+				"255",
+				"256",
+				"257",
+				"258",
+				"259",
+				"261",
+				"262",
+				"263",
+				"265",
+				"267",
+				"268",
+				"269",
+				"271",
+				"272",
+				"273",
+				"274",
+				"277",
+				"278",
+				"281",
+				"282",
+				"283",
+				"284",
+				"285",
+				"286",
+				"287",
+				"289",
+				"291",
+				"320",
+				"322",
+				"323",
+				"324",
+				"326",
+				"327",
+				"328",
+				"330",
+				"332",
+				"333",
+				"334",
+				"335",
+				"336",
+				"337",
+				"340",
+				"345",
+				"346",
+				"347",
+				"348",
+				"349",
+				"351",
+				"353",
+				"354",
+				"355",
+				"357",
+				"359",
+				"361",
+				"364",
+				"365",
+				"366",
+				"367",
+				"368",
+				"369",
+				"370",
+				"371",
+				"421",
+				"422",
+				"423",
+				"424",
+				"425",
+				"426",
+				"427",
+				"429",
+				"430",
+				"431",
+				"432",
+				"434",
+				"436",
+				"437",
+				"438",
+				"439",
+				"441",
+				"442",
+				"444",
+				"445",
+				"446",
+				"447",
+				"448",
+				"449",
+				"450",
+				"451",
+				"454",
+				"456",
+				"457",
+				"458",
+				"460",
+				"461",
+				"462",
+				"467",
+				"469",
+				"470",
+				"471",
+				"472",
+				"474",
+				"475",
+				"476",
+				"477",
+				"479",
+				"482",
+				"483",
+				"523",
+				"524",
+				"526",
+				"527",
+				"530",
+				"531",
+				"532",
+				"533",
+				"536",
+				"537",
+				"538",
+				"540",
+				"541",
+				"543",
+				"544",
+				"545"
+			],
+			"title": "Staat",
+			"type": "string"
+		},
+		"F60000262V1.1": {
+			"maxLength": 35,
+			"minLength": 1,
+			"title": "ZeileAnschrift",
+			"type": "string"
+		},
+		"F60000263V2.0": {
+			"enum": [
+				"001",
+				"002"
+			],
+			"title": "Abfrage Anschrift Inland oder Ausland",
+			"type": "string"
+		},
+		"F60000345V1.2": {
+			"maxLength": 253,
+			"title": "De-Mail-Adresse",
+			"type": "string"
+		},
+		"G00002115V1.0": {
+			"properties": {
+				"F60000227V1.1": {
+					"$ref": "#/$defs/F60000227V1.1"
+				},
+				"F60000228V2.0": {
+					"$ref": "#/$defs/F60000228V2.0"
+				},
+				"F60000229V2.0": {
+					"$ref": "#/$defs/F60000229V2.0"
+				},
+				"F60000230V2.0": {
+					"$ref": "#/$defs/F60000230V2.0"
+				},
+				"G60000083V2.0": {
+					"$ref": "#/$defs/G60000083V2.0"
+				},
+				"G60000093V3.1": {
+					"$ref": "#/$defs/G60000093V3.1"
+				},
+				"G60000183V2.0": {
+					"$ref": "#/$defs/G60000183V2.0"
+				}
+			},
+			"required": [
+				"F60000227V1.1",
+				"F60000228V2.0",
+				"G60000083V2.0",
+				"G60000093V3.1",
+				"G60000183V2.0"
+			],
+			"title": "Antragsteller - Natürliche Person (ohne GV, mit Ausland) - zenBRed",
+			"type": "object"
+		},
+		"G00002125V1.0": {
+			"properties": {
+				"F00003338V1.0": {
+					"$ref": "#/$defs/F00003338V1.0"
+				},
+				"F00003339V1.0": {
+					"$ref": "#/$defs/F00003339V1.0"
+				},
+				"F00003340V1.0": {
+					"$ref": "#/$defs/F00003340V1.0"
+				},
+				"G00002115V1.0": {
+					"$ref": "#/$defs/G00002115V1.0"
+				},
+				"G00002127V1.0": {
+					"$ref": "#/$defs/G00002127V1.0"
+				}
+			},
+			"required": [
+				"G00002115V1.0",
+				"F00003338V1.0"
+			],
+			"title": "Allgemeine Angaben ",
+			"type": "object"
+		},
+		"G00002127V1.0": {
+			"properties": {
+				"F60000227V1.1": {
+					"$ref": "#/$defs/F60000227V1.1"
+				},
+				"F60000228V2.0": {
+					"$ref": "#/$defs/F60000228V2.0"
+				},
+				"G60000083V2.0": {
+					"$ref": "#/$defs/G60000083V2.0"
+				},
+				"G60000085V1.4": {
+					"$ref": "#/$defs/G60000085V1.4"
+				},
+				"G60000093V3.1": {
+					"$ref": "#/$defs/G60000093V3.1"
+				}
+			},
+			"required": [
+				"F60000228V2.0",
+				"F60000227V1.1",
+				"G60000083V2.0",
+				"G60000085V1.4",
+				"G60000093V3.1"
+			],
+			"title": "Natürliche Person ",
+			"type": "object"
+		},
+		"G00002175V1.0": {
+			"properties": {
+				"F00003385V1.0": {
+					"$ref": "#/$defs/F00003385V1.0"
+				},
+				"F00003386V1.0": {
+					"$ref": "#/$defs/F00003386V1.0"
+				},
+				"F00003387V1.0": {
+					"$ref": "#/$defs/F00003387V1.0"
+				},
+				"F03011101V1.0": {
+					"items": {
+						"$ref": "#/$defs/F03011101V1.0"
+					},
+					"minItems": 0,
+					"type": "array"
+				},
+				"F03011102V1.0": {
+					"items": {
+						"$ref": "#/$defs/F03011102V1.0"
+					},
+					"minItems": 0,
+					"type": "array"
+				}
+			},
+			"required": [
+				"F00003385V1.0",
+				"F00003386V1.0",
+				"F00003387V1.0",
+				"F03011101V1.0",
+				"F03011102V1.0"
+			],
+			"title": "Voraussetzungen für die Bearbeitung des Antrages",
+			"type": "object"
+		},
+		"G60000083V2.0": {
+			"properties": {
+				"F60000231V1.1": {
+					"$ref": "#/$defs/F60000231V1.1"
+				},
+				"F60000232V1.1": {
+					"$ref": "#/$defs/F60000232V1.1"
+				},
+				"F60000233V1.1": {
+					"$ref": "#/$defs/F60000233V1.1"
+				}
+			},
+			"required": [
+				"F60000233V1.1"
+			],
+			"title": "Geburtsdatum (teilbekannt)",
+			"type": "object"
+		},
+		"G60000085V1.4": {
+			"properties": {
+				"F60000240V1.1": {
+					"$ref": "#/$defs/F60000240V1.1"
+				},
+				"F60000241V1.1": {
+					"$ref": "#/$defs/F60000241V1.1"
+				},
+				"F60000242V1.1": {
+					"$ref": "#/$defs/F60000242V1.1"
+				},
+				"F60000345V1.2": {
+					"$ref": "#/$defs/F60000345V1.2"
+				}
+			},
+			"required": [],
+			"title": "Kommunikation (wenig)",
+			"type": "object"
+		},
+		"G60000086V2.1": {
+			"properties": {
+				"F60000243V1.2": {
+					"$ref": "#/$defs/F60000243V1.2"
+				},
+				"F60000244V1.2": {
+					"$ref": "#/$defs/F60000244V1.2"
+				},
+				"F60000246V1.1": {
+					"$ref": "#/$defs/F60000246V1.1"
+				},
+				"F60000247V2.2": {
+					"$ref": "#/$defs/F60000247V2.2"
+				},
+				"F60000248V1.1": {
+					"$ref": "#/$defs/F60000248V1.1"
+				}
+			},
+			"required": [
+				"F60000243V1.2",
+				"F60000246V1.1",
+				"F60000247V2.2"
+			],
+			"title": "Anschrift Inland Straßenanschrift",
+			"type": "object"
+		},
+		"G60000087V2.1": {
+			"properties": {
+				"F60000246V1.1": {
+					"$ref": "#/$defs/F60000246V1.1"
+				},
+				"F60000247V2.2": {
+					"$ref": "#/$defs/F60000247V2.2"
+				},
+				"F60000249V1.1": {
+					"$ref": "#/$defs/F60000249V1.1"
+				}
+			},
+			"required": [
+				"F60000246V1.1",
+				"F60000247V2.2"
+			],
+			"title": "Anschrift Inland Postfachanschrift",
+			"type": "object"
+		},
+		"G60000088V2.1": {
+			"properties": {
+				"G60000086V2.1": {
+					"$ref": "#/$defs/G60000086V2.1"
+				},
+				"G60000087V2.1": {
+					"$ref": "#/$defs/G60000087V2.1"
+				}
+			},
+			"required": [],
+			"title": "Anschrift Inland",
+			"type": "object"
+		},
+		"G60000091V3.0": {
+			"properties": {
+				"F60000261V2.1": {
+					"$ref": "#/$defs/F60000261V2.1"
+				},
+				"G60000092V2.0": {
+					"$ref": "#/$defs/G60000092V2.0"
+				}
+			},
+			"required": [
+				"F60000261V2.1",
+				"G60000092V2.0"
+			],
+			"title": "Anschrift Ausland",
+			"type": "object"
+		},
+		"G60000092V2.0": {
+			"properties": {
+				"F60000262V1.1": {
+					"items": {
+						"$ref": "#/$defs/F60000262V1.1"
+					},
+					"maxItems": 5,
+					"minItems": 2,
+					"type": "array"
+				}
+			},
+			"required": [
+				"F60000262V1.1"
+			],
+			"title": "Anschriftzone",
+			"type": "object"
+		},
+		"G60000093V3.1": {
+			"properties": {
+				"F60000263V2.0": {
+					"$ref": "#/$defs/F60000263V2.0"
+				},
+				"G60000088V2.1": {
+					"$ref": "#/$defs/G60000088V2.1"
+				},
+				"G60000091V3.0": {
+					"$ref": "#/$defs/G60000091V3.0"
+				}
+			},
+			"required": [
+				"F60000263V2.0"
+			],
+			"title": "Anschrift Inland oder Ausland mit Frage",
+			"type": "object"
+		},
+		"G60000183V2.0": {
+			"properties": {
+				"F60000240V1.1": {
+					"$ref": "#/$defs/F60000240V1.1"
+				},
+				"F60000241V1.1": {
+					"$ref": "#/$defs/F60000241V1.1"
+				},
+				"F60000242V1.1": {
+					"$ref": "#/$defs/F60000242V1.1"
+				}
+			},
+			"required": [],
+			"title": "Kommunikation (wenig, ohne De-Mail)",
+			"type": "object"
+		}
+	},
+	"$id": "https://schema.fim.fitko.net/immutable/schemas/S00000253V1.0_2025-11-25-1764058899389.schema.json",
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"properties": {
+		"G00002125V1.0": {
+			"$ref": "#/$defs/G00002125V1.0"
+		},
+		"G00002175V1.0": {
+			"$ref": "#/$defs/G00002175V1.0"
+		}
+	},
+	"required": [
+		"G00002125V1.0",
+		"G00002175V1.0"
+	],
+	"title": "Antrag Bescheinigung Belehrung Infektionsschutzgesetz",
+	"type": "object"
+}
