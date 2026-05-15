@@ -1,13 +1,7 @@
 {
   "type": "object",
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://marinalinde.github.io/json-schema-kt/hackathon_kt.json",
-  "title": "Test - Amtsärztliche Untersuchung Durchführung Dienstfähigkeit, Dienstunfallfolgen bei Beamtinnen und Beamten ",
-  "properties": {
-    "G05005693V1.0": {
-      "$ref": "#/$defs/G05005693V1.0"
-    }
-  },
+  "$id": "https://github.com/marinalinde/json-schema-kt/blob/main/hackathon_kt.json",
+  "title": "Test - Untersuchung ",
   "$defs": {
     "G05005693V1.0": {
       "title": "Persönliche Angaben",
@@ -139,6 +133,14 @@
       "pattern": "[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{1,63}$",
       "title": "E-Mail",
       "type": "string"
-    }
+    },
+    "properties": {
+      "G05005693V1.0": {
+        "$ref": "#/$defs/G05005693V1.0"
+      }
+    },
+    "required": [
+      "G05005693V1.0"
+    ]
   }
 }
